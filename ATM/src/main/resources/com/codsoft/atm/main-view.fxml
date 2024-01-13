@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codsoft.atm.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox prefHeight="0" prefWidth="200.0">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+        <Label text="Amount">
+           <font>
+               <Font size="14.0" />
+           </font>
+           <HBox.margin>
+               <Insets />
+           </HBox.margin>
+        </Label>
+        <TextField fx:id="txtAmount" promptText="Amount">
+         <HBox.margin>
+             <Insets left="10.0" />
+         </HBox.margin>
+        </TextField>
+    </HBox>
+    <HBox prefHeight="0.0" prefWidth="200.0">
+        <Button mnemonicParsing="false" onAction="#onDepositClick" text="Deposit" />
+        <Button mnemonicParsing="false" onAction="#onWithdrawClick" text="Withdraw" />
+    </HBox>
+    <HBox prefHeight="0.0" prefWidth="200.0">
+        <Button defaultButton="true" mnemonicParsing="false" onAction="#onCheckBalanceClick" text="Check Balance" />
+        <TextField fx:id="txtBalance" disable="true" prefHeight="25.0" prefWidth="118.0" />
+    </HBox>
+</VBox>
