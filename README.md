@@ -2,9 +2,6 @@
 Implemented using JavaFx
 
 1.ATM
-
 1.QUIZ
-
 1.RANDOM NUMBER GAME
-
 1.STUDENT GRADE CALCULATOR
